@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Macaron Magic</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul class="nav-menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#order">Order</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#review">Review</a></li>
+    </ul>
+  </nav>
+
+  <header class="header" id="home">
+  <div class="header-text">
+    <h1>Macaron Magic 🫓</h1>
+    <p>Sweet, Colorful, and Irresistible!</p>
+    <p>Experience the joy of handcrafted macarons bursting with vibrant flavors and delicate textures — made fresh just for you.</p>
+  </div>
+  <div class="header-image">
+    <img src="home.jpg" alt="Colorful macarons on display" />
+  </div>
+</header>
+
+
+  <section class="macaron-section" id="menu">
+    <h2>Our Macaron Menu</h2>
+    <div class="macaron-container" id="macaronMenu">
+      <!-- Macaron cards will be injected here by JavaScript -->
+    </div>
+  </section>
+
+ <section class="about-section" id="about">
+  <h2>About Us</h2>
+  <div class="about-content">
+    <div class="about-text">
+      <p>Welcome to Macaron Bliss, where every bite is a celebration of flavor and color. We craft the finest macarons with love and premium ingredients.</p>
+    </div>
+    <div class="about-image">
+      <img src="about.jpg" alt="Delicious macarons" />
+    </div>
+  </div>
+</section>
+
+
+
+ <section class="order-section" id="order">
+  <h2>Order Now</h2>
+  <p>Ready to taste the magic? Place your order and enjoy our delightful macarons delivered fresh to your doorstep.</p>
+
+  <form class="order-form" action="#" method="post">
+    <label for="name">Your Name</label><br/>
+    <input type="text" id="name" name="name" placeholder="Enter your full name" required /><br/>
+
+    <label for="phone">Phone Number</label><br/>
+    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required /><br/>
+
+    <label for="macaron">Choose Your Macaron</label><br/>
+    <select id="macaron" name="macaron" required>
+      <option value="" disabled selected>Select a macaron flavor</option>
+      <option value="vanilla">Vanilla</option>
+      <option value="chocolate">Chocolate</option>
+      <option value="raspberry">Raspberry</option>
+      <option value="pistachio">Pistachio</option>
+      <option value="lemon">Lemon</option>
+    </select><br/>
+
+    <label for="notes">Notes</label><br/>
+    <textarea id="notes" name="notes" rows="4" placeholder="Any special requests or notes"></textarea><br/>
+
+    <button type="submit" class="submit-btn">Place Order</button>
+  </form>
+</section>
+
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: support@macaronbliss.com</p>
+    <p>Phone: +1 234 567 8900</p>
+    <p>Address: 123 Sweet St, Dessert City</p>
+  </section>
+
+  <!-- Review Section -->
+  <section class="review-section" id="review">
+  <h2>Customer Reviews</h2>
+  <div class="reviews-container">
+    <div class="review-card">
+      <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Jane D." />
+      <p>"The best macarons I've ever had!"</p>
+      <h4>– Jane D.</h4>
+    </div>
+    <div class="review-card">
+      <img src="https://randomuser.me/api/portraits/men/34.jpg" alt="Mark T." />
+      <p>"A colorful delight for every occasion."</p>
+      <h4>– Mark T.</h4>
+    </div>
+    <div class="review-card">
+      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sophia L." />
+      <p>"Absolutely delicious and beautifully crafted macarons."</p>
+      <h4>– Sophia L.</h4>
+    </div>
+    <div class="review-card">
+      <img src="https://randomuser.me/api/portraits/men/52.jpg" alt="James K." />
+      <p>"Perfect treat for my birthday party – everyone loved them!"</p>
+      <h4>– James K.</h4>
+    </div>
+    <div class="review-card">
+      <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="Emily R." />
+      <p>"Fresh, flavorful, and the colors are stunning!"</p>
+      <h4>– Emily R.</h4>
+    </div>
+  </div>
+</section>
+
+
+  <footer class="footer">
+    <p>&copy; 2025 Macaron Bliss. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
